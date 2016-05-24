@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>fbavue</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body id="app">
+<div class="container-fluid">
+  <div class="row">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" v-link="{ path: '/' }">FBA</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a v-link="{ path: '/' }">Main</a></li>
+          <li><a v-link="{ path: '/basket' }">Basket</a></li>
+          <li><a v-link="{ path: '/item' }">Items</a></li>
+          <li><a v-link="{ path: '/me' }">Me</a></li>
+          <li><a v-link="{ path: '/404' }">404</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="headerApp" id="headerApp" style="margin: 0 auto; text-align: center">
+        <img width="100" height="100" class="img-circle" src="src/assets/logo.png">
+        <p>
+          Fruit basket store
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="container">
+        <router-view></router-view>
+      </div>
+    </div>
+  </div>
+  <!-- built files will be auto injected -->
+</div>
+</body>
+</html>
